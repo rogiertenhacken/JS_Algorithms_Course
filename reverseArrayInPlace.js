@@ -13,7 +13,7 @@ reverseArrayInPlace([1,2,3,4,5,6,7]);
 //with comments:
 //define function with param arr:
 // function reverseArrayInPlace(arr) {
-//   //we don't want a new array or use .reverse(). we start with a foor loop to go through the array use .length / 2 to only use the first half of the array, otherwise the array will be reversed to the original again:
+//   //we don't want a new array or use .reverse(). we start with a for loop to go through the array use .length / 2 to only use the first half of the array, otherwise the array will be reversed to the original again:
 //   for (let i=0; i < arr.length / 2; i++) {
 //     //here happens the magic:
 //     //we want to switch the first element of the array with the last, the second with the second to last, etc.

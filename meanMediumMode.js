@@ -84,7 +84,7 @@ meanMedianMode([1,2,3,4,5,4,6,1]);
 //   let median; //declare empty variable
 //
 //
-//   //when there are a odd number of elements in the array (not even):
+//   //when there are a odd number of elements in the array:
 //   if (array.length % 2 !== 0) {
 //     median = array[Math.floor(array.length / 2)]; //using math.floor to round it down.
 //     //[Math.floor(array.length / 2)] gives the index of the middle element.

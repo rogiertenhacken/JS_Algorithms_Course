@@ -7,10 +7,10 @@ const caesarCipher= (str, num) => {
   //go over the lowerCaseString
   for (let i=0; i < lowerCaseString.length; i++) {
     let currentLetter = lowerCaseString[i]; //declare currentLetter
-    //als de eerste letter een spatie is:
+    //when the first character is a space
     if (currentLetter === ' ') {
       newString += currentLetter;
-      continue; //ga door naar de volgende operatie
+      continue; //go to next operation
     }
     let currentIndex = alphabet.indexOf(currentLetter);
     let newIndex = currentIndex + num;
@@ -21,7 +21,7 @@ const caesarCipher= (str, num) => {
     if (str[i] === str[i].toUpperCase()) {
       newString += alphabet[newIndex].toUpperCase();
     }
-    else newString += alphabet[newIndex]; //geen hoofdletter, dan gewoon verder gaan
+    else newString += alphabet[newIndex]; //no capital, then go on
   }
   return newString;
 }

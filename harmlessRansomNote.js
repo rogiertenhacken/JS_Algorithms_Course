@@ -9,7 +9,7 @@
     });
 
    let noteIsPossible = true;
-   
+
    noteArr.forEach(word => {
      if (magazineObj[word]) {
        magazineObj[word]--;
@@ -35,8 +35,8 @@
 // //here it inventorise all the words in the 'magazine' using forEach on the magazineArray
 //
 //   magazineArr.forEach(word => {
-//     if (!magazineObj[word]) magazineObj[word] = 0; //als niet in magazineObj dan wordt magazineObj 0 (if not, then)
-//     magazineObj[word]++; //anders voeg je 1 toe
+//     if (!magazineObj[word]) magazineObj[word] = 0; //when not in the magazineObj then the counter is zero
+//     magazineObj[word]++; //if so, plus one
 //   });
 //   //console.log(magazineObj);
 //
@@ -51,9 +51,9 @@
 //       if (magazineObj[word]) {
 //         magazineObj[word]--; //decrement, cause we used the word once.
 //         if (magazineObj[word] < 0) noteIsPossible = false;
-//         // false want: je hebt niet genoeg van dat woord.
+//         // false because there are not enough of this word
 //       }
-//       else noteIsPossible = false; //woord komt niet voor, dus het kan niet.
+//       else noteIsPossible = false; //word is not present, not possible
 //     });
 //
 //     return noteIsPossible;
